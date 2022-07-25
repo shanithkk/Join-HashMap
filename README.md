@@ -1,6 +1,6 @@
 # Join-HashMap
 This is a small functionality for concatenate two hash-map in rust using their key.
-In this package only one functionality is there that is ```join_hashmap``` function it will take two hashmap and based on the key it will join the values.
+In this package only one functionality is there that is ```join_hashmap``` function it will take two hashmap and based on the key it will join the values. another function are ```merge``` and ```merge_to_string``` these functions combine two hashmap and create new hashmap with HashMap<String, Values>,  and HashMap<String, String>.
 
 ## Example
 
@@ -33,5 +33,5 @@ let response = HashMap::from([
 assert_eq!(join_two_hashmap, response);
 ```
 
-More functionalities added in the future for hashmap
+More functionalities added in the future for hashmaps
 
