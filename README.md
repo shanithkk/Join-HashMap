@@ -33,5 +33,27 @@ let response = HashMap::from([
 assert_eq!(join_two_hashmap, response);
 ```
 
+Example for Merge function
+
+```
+let mut first = HashMap::from([
+        ("a".to_string(), "97"),
+        ("b".to_string(), "98"),
+        ("c".to_string(), "99"),
+    ]);
+    let mut second = HashMap::from([(100, "100"), (101, "101"), (102, "102")]);
+
+    let datas = merge(&mut first, &mut second);
+    let response = HashMap::from([
+        ("a".to_string(), "97"),
+        ("b".to_string(), "98"),
+        ("c".to_string(), "99"),
+        ("100".to_string(), "100"),
+        ("101".to_string(), "101"),
+        ("102".to_string(), "102"),
+    ]);
+    assert_eq!(datas, response);
+```
+
 More functionalities added in the future for hashmaps
 
